@@ -60,14 +60,14 @@ const USER_CONFIG = {
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [
+  USERS: ['oaQp_5ysgyRmBn8ThaQv1cR0QMeY',
     {
       // 想要发送的人的名字
       name: '老婆0',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oaQp_55I6fQ_ucbaKZ2i5fw83z7U',
+      id: 'oaQp_5ysgyRmBn8ThaQv1cR0QMeY',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: 'MlCxWAwOZHdIzQ73d_ggOdHbvWNna59TkecH5UaGm6A	',
+      useTemplateId: '	4pfJCJfz0fguKOpGIStOGxMGr9LpYouXkAmvgPb7-hU	',
       // 所在省份
       province: '广东',
       // 所在城市
@@ -170,45 +170,7 @@ const USER_CONFIG = {
         }
       },
     },
-    {
-      name: '老婆1',
-      id: 'oaQp_55I6fQ_ucbaKZ2i5fw83z7U',
-      useTemplateId: 'MlCxWAwOZHdIzQ73d_ggOdHbvWNna59TkecH5UaGm6A',
-      province: '河南',
-      city: '安阳',
-      horoscopeDate: '12-12',
-      horoscopeDateType: '今日',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: 'oaQp_55I6fQ_ucbaKZ2i5fw83z7U',
-      useTemplateId: 'MlCxWAwOZHdIzQ73d_ggOdHbvWNna59TkecH5UaGm6A',
-      province: '河南',
-      city: '安阳',
-      horoscopeDate: '12-12',
-      horoscopeDateType: '今日',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: 'oaQp_55I6fQ_ucbaKZ2i5fw83z7U',
-      useTemplateId: 'MlCxWAwOZHdIzQ73d_ggOdHbvWNna59TkecH5UaGm6A',
-      province: '河南',
-      city: '安阳',
-      horoscopeDate: '12-12',
-      horoscopeDateType: '今日',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
+  
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -218,10 +180,10 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: '4pfJCJfz0fguKOpGIStOGxMGr9LpYouXkAmvgPb7-hU',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: ['oaQp_5ysgyRmBn8ThaQv1cR0QMeY',
     {
       // 一般都填自己
       name: '自己',
