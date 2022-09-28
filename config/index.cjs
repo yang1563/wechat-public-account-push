@@ -7,16 +7,17 @@ const USER_CONFIG = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: '',
+  APP_ID: 'wxb1755b9e50f8d3b1',
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '',
+  APP_SECRET: 'a91e170219f49a6738f4a6f1da4e83be',
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
   IS_SHOW_COLOR: true,
+  color:15796,
 
   // 功能开关,打开：true，关闭：false
   SWITCH: {
@@ -60,18 +61,18 @@ const USER_CONFIG = {
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [
+  USERS: ["oaQp_5ysgyRmBn8ThaQv1cR0QMeY",
     {
       // 想要发送的人的名字
-      name: '老婆0',
+      name: '金金',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oaQp_5ysgyRmBn8ThaQv1cR0QMeY',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      useTemplateId: '	faRVct_-LoH1zCiP_cZUFj12sd_o5e0OvFjlSWKUsJk',
       // 所在省份
-      province: '广东',
+      province: '河南',
       // 所在城市
-      city: '肇庆',
+      city: '郑州',
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '12-27',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -82,23 +83,21 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '金金', year: '2004', date: '01-04',
         },
-        {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
-        },
+        
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '生日', name: '元元', year: '2002', date: '01-09',
         },
         {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+          type: '节日', name: '第一次在一起的时间', year: '2022', date: '02-14',
         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
+        { keyword: 'love_day', date: '2022-02-14' },
         // 结婚纪念日
         { keyword: 'marry_day', date: '2022-09-09' },
         // 退伍日
@@ -117,116 +116,21 @@ const USER_CONFIG = {
           isOdd: true
         },
         // 课表
-        courses: {
-          // 单周课表
-          // 从星期一到星期日（星期六和星期日的课表数组可不填写）
-          odd: [
-            // 例子，周一的课表
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周二
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周三
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周四
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周五
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周六
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周日
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ]
-          ],
-          // 双周课表
-          even: [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ]
-        }
-      },
-    },
-    {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-
+        
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: '	faRVct_-LoH1zCiP_cZUFj12sd_o5e0OvFjlSWKUsJk',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: ["oaQp_5ysgyRmBn8ThaQv1cR0QMeY",
     {
       // 一般都填自己
       name: '自己',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oaQp_5ysgyRmBn8ThaQv1cR0QMeY',
     }
     // 你可以不断按格式往下增加
     // ...
